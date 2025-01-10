@@ -5,7 +5,7 @@
   "description": "Adds keyboard shortcuts for cell navigation",
   "permissions": ["activeTab"],
   "content_scripts": [{
-    "matches": ["<all_urls>"],
+    "matches": ["*://*.solveit.fast.ai/*"],
     "js": ["content.js"]
   }]
 }
