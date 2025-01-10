@@ -20,9 +20,10 @@
 - Move down: `j` or `↓` (down arrow)
 - Move up: `k` or `↑` (up arrow)
 - Delete current card: `x`
+- Edit current card: `e` (exits command mode and focuses on editor)
 
 ## Current Features
 - Vim-style navigation between cards
 - Visual highlight of currently selected card
 - Quick deletion with x key
-
+- Quick edit mode access with e key

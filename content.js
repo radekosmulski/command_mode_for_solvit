@@ -42,6 +42,16 @@ document.addEventListener('keydown', function(event) {
                     deleteButton.click();
                 }
             }
+        } else if (event.key === 'e') {
+            const cards = getAllCards();
+            if (currentCardIndex >= 0 && currentCardIndex < cards.length) {
+                const editElement = cards[currentCardIndex].querySelector('[title="Click to edit"]');
+                if (editElement) {
+                    editElement.click();
+                    commandMode = false;
+                    highlightCard(-1);
+                }
+            }
         }
     }
     
